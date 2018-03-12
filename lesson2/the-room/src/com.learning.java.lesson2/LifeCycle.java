@@ -36,7 +36,7 @@ public class LifeCycle {
                 }
             }
             if (occupiedSpace > space) {
-                System.out.printf("The room is overcrowded on %d%s cycle", cycle, getSuffix(cycle));
+                System.out.printf("The room is overcrowded on %d%s cycle\n", cycle, getSuffix(cycle));
                 return;
             }
             cycle++;
