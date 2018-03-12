@@ -1,4 +1,4 @@
-package com.java.teaching.basic_java_example.objects;
+package com.learning.java.lesson3.objects;
 
 public interface BusinessDataSource {
 

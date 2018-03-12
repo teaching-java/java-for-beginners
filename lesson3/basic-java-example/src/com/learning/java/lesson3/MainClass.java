@@ -1,8 +1,8 @@
-package com.java.teaching.basic_java_example;
+package com.learning.java.lesson3;
 
-import com.java.teaching.basic_java_example.objects.BusinessDataSource;
-import com.java.teaching.basic_java_example.objects.BusinessDataSourceFactory;
-import com.java.teaching.basic_java_example.objects.BusinessObject;
+import com.learning.java.lesson3.objects.BusinessDataSource;
+import com.learning.java.lesson3.objects.BusinessDataSourceFactory;
+import com.learning.java.lesson3.objects.BusinessObject;
 
 public class MainClass {
 

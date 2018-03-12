@@ -1,4 +1,4 @@
-package com.java.teaching.basic_java_example.objects;
+package com.learning.java.lesson3.objects;
 
 import java.io.IOException;
 import java.nio.file.Files;
