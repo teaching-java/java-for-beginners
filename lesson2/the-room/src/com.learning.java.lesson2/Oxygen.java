@@ -8,11 +8,16 @@ public class Oxygen {
         this.volume = volume;
     }
 
-    public boolean isPresent() {
-        return volume > 0;
+    public boolean isAbsent() {
+        return volume <= 0;
     }
 
     public void spend(int value) {
         volume -= value;
+    }
+
+    @Override
+    public String toString() {
+        return volume + "";
     }
 }
