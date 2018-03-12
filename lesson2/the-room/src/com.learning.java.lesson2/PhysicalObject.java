@@ -1,4 +1,4 @@
-package com.developer.java;
+package com.learning.java.lesson2;
 
 public interface PhysicalObject {
 

@@ -1,21 +1,21 @@
-package com.developer.java;
+package com.learning.java.lesson2;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class LifeCycle {
 
-    Room room = new Room(100);
+    private final Room room = new Room(100);
 
-    List list = new ArrayList();
+    private final List items = new ArrayList();
 
     public LifeCycle() {
         Stone stone1 = new Stone(10);
         Stone stone2 = new Stone(12);
         Cow cow = new Cow();
-        list.add(stone1);
-        list.add(stone2);
-        list.add(cow);
+        items.add(stone1);
+        items.add(stone2);
+        items.add(cow);
     }
 
     public void start() {
@@ -23,8 +23,8 @@ public class LifeCycle {
         while (true) {
             int space = room.getSpace();
             int occupiedSpace = 0;
-            for (int i = 0; i < list.size(); i++) {
-                Object object = list.get(i);
+            for (int i = 0; i < items.size(); i++) {
+                Object object = items.get(i);
                 if (object instanceof PhysicalObject) {
                     PhysicalObject physicalObject = (PhysicalObject) object;
                     int objectSize = physicalObject.getSize();
@@ -36,13 +36,26 @@ public class LifeCycle {
                 }
             }
             if (occupiedSpace > space) {
-                System.out.println(cycle);
-                list.forEach(System.out::println);
+                System.out.printf("The room is overcrowded on %d%s cycle", cycle, getSuffix(cycle));
                 return;
             }
             cycle++;
-            System.out.println(cycle);
-            System.out.println(occupiedSpace);
         }
+    }
+
+    private String getSuffix(int cycle) {
+        if (cycle % 100 / 10 == 1) { // 11, 12, 13, etc
+            return "th";
+        }
+        if (cycle % 10 == 1) { // first
+            return "st";
+        }
+        if (cycle % 10 == 2) { // second
+            return "nd";
+        }
+        if (cycle % 10 == 3) { // third
+            return "rd";
+        }
+        return "th";
     }
 }

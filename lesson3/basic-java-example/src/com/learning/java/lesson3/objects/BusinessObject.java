@@ -9,6 +9,6 @@ public class BusinessObject {
     }
 
     public void doSomeBusinessStuff() {
-        System.out.println("Doing a business stuff with business data: " + businessData);
+        System.out.println("Doing a business stuff with " + businessData);
     }
 }

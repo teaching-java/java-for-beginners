@@ -1,7 +1,7 @@
-package com.developer.java.objects;
+package com.learning.java.lesson2.objects;
 
-import com.developer.java.Alive;
-import com.developer.java.PhysicalObject;
+import com.learning.java.lesson2.Alive;
+import com.learning.java.lesson2.PhysicalObject;
 
 public abstract class Animal implements Alive, PhysicalObject {
 

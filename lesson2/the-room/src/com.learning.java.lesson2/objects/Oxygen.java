@@ -1,4 +1,4 @@
-package com.developer.java.objects;
+package com.learning.java.lesson2.objects;
 
 public class Oxygen {
 }
