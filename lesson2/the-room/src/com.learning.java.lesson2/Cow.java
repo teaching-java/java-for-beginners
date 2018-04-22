@@ -14,6 +14,11 @@ public class Cow implements Alive, PhysicalObject {
     }
 
     @Override
+    public void breathe(Oxygen oxygen) {
+        oxygen.spend(size / 2);
+    }
+
+    @Override
     public int getSize() {
         return size;
     }

@@ -4,8 +4,6 @@ public interface Alive {
 
     void growUp();
 
-    default void breathe(Oxygen oxygen) {
-        //do nothing
-    }
+    void breathe(Oxygen oxygen);
 
 }

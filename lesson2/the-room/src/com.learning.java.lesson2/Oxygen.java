@@ -8,8 +8,8 @@ public class Oxygen {
         this.volume = volume;
     }
 
-    public boolean isAbsent() {
-        return volume <= 0;
+    public int getVolume() {
+        return volume;
     }
 
     public void spend(int value) {
